@@ -1,0 +1,7 @@
+```html
+<div class="flex">
+  <div class="bg-red-500 p-4 w-1/2"></div>
+  <div class="bg-blue-500 p-4 w-1/2"></div>
+</div>
+```
+This code will not work as expected because the `w-1/2` class tries to make each div take up half the width of its parent.  However, since there's no explicit width on the parent `div`, it will default to only as wide as its contents.  The two child divs then fight for that space, leading to unexpected results. 
